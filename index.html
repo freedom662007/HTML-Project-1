@@ -1,272 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="normalize.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap resume</title>
+    <!-- Подключение bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Подключение шрифтов bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d50d610183.js" crossorigin="anonymous"></script>
-    <title>Resume</title>
 </head>
-<body>
-    <div class="main-section container">
-    <!-- Правый контейнер -->
-        <div class="main-section__left">
-    <!-- Контейнер для фото -->
-            <div class="main-section__left_foto">
-                <img src="1.3.png" alt="Фото Матвеев Игорь">
-            </div>
-    <!-- Контейнер для имени -->
-            <div class="main-section__left_title">
-                <h1 class="title">Матвеев Игорь</h1>
-            </div>
-         <!-- Контейнер "Контакты" --> 
-            <div class="main-section__left_content">
-            <h2 class="text">Контакты</h2>
-            <ul>
-                <li> <i class="fa fa-phone" aria-hidden="true"></i> +7 903 582 74 27</li>
-                <li><i class="fa fa-envelope" aria-hidden="true"></i> ivm.5@yandex.ru</li>
-                <li><i class="fa fa-vk" aria-hidden="true"></i> ivm_66@mail.ru</li>
-                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Москва</li>
-            </ul>
-            </div>
-            <div class="main-section__left_education">
-                <h2 class="text">Образование</h2>
-                <p>Среднее</p>
-                <p>Московский механико-технологический техникум </p>
-            </div>
-        </div> 
-    <!--Правый контейнер  -->  
-       <div class="main-section__right">
-            <div class="main-section__right_title">
-                <h2 class="title">QA инженер</h2>
-            </div>
-    <!--Курсы  -->
-           <div class="main-section__right_courses">
-                <h2>Курсы</h2>
-                <ul>
-                    <li class="li-text">
-                        2024 - Инженер по тестированию QA+ 
-                        <a href="https://disk.yandex.ru/i/6Qmx-UlTzEVNmw">
-                            Сертификат
-                        </a>
-                    </li>
-                    <li class="li-text">
-                        2025 - Интерактивный тренажёр по SQL 
-                        <a href="https://stepik.org/cert/2715790">Сертификат</a>
-                    </li>
-                    <li class="li-text">
-                        2025 - Python: начальный курс 
-                        <a href="https://stepik.org/cert/2885269">Сертификат</a>
-                    </li>
-                    <li class="li-text">
-                        2026 - Курс по верстке и веб разработке сайтов с нуля! Web development 
-                        <a href="https://stepik.org/cert/3322179">Сертификат</a>
-                    </li>
-                </ul>
-           </div>
-        <!-- Секция Навыки -->
-           <div class="main-section__right_skills">
-                <h2>Навыки</h2>
-                <ul>
-                    <li class="main-section__right_skills-link">
-                        <div class="text-indicator">
-                            Анализ требований
-                            <div class="doc__indicator indicator">
-                                <div class="doc__decor decor">
-                                    
+    <body>
+       <div class="container">
+            <div class="row justify-content-between">
+                <!-- left row -->
+                <div class="col-3 p-3 ">
+                    <div class="card main-section  bg-dark-subtle" style="width: 20rem;  min-height: 2105px">
+                        <img src="1.3.png" alt="foto" class="my-foto p-3" style="width: 60%; height: auto; border-radius: 200px">
+                            <div class="card-body">
+                                <h2 class="card-title">Матвеев Игорь</h2>
+                        <!-- Блок с иконками -->
+                            <div class="card-icons lh-lg">
+                                    <h5>
+                                        <strong>
+                                            Контакты
+                                        </strong>
+                                    </h5>
+                                <div class="card-phone justify-content-between">
+                                    <i class="bi bi-telephone-fill p-2"></i>
+                                    +7 903 582 74 27  
+                                </div>
+                                <div class="card-mail justify-content-between">
+                                    <i class="bi bi-envelope-fill p-2"></i>
+                                    ivm.5@yandex.ru
+                                </div>
+                                <div class="card-map justify-content-between">
+                                    <i class="bi bi-geo-alt-fill p-2"></i>
+                                    Москва
                                 </div>
                             </div>
+                        <!-- Блок образование-->
+                            <div class="card-education p-2">
+                                <h5>
+                                    <strong>
+                                        Образование
+                                    </strong>
+                                </h5>
+                                    <h6>
+                                        <strong>Средне-техническое:</strong>
+                                    </h6>
+                                <p class="lh-lg">
+                                    Московский <br>
+                                    механико-технологический техникум
+                                </p>
+                            </div>
+                            <div class="card-course p-2">
+                                <h5>
+                                    <strong>Курсы</strong>
+                                </h5>
+                                <p class="lh-lg">
+                                    2024 - Яндекс Практикум:<br>"Инженер по тестированию QA+"
+                                    <br>
+                                        <a href="https://disk.yandex.ru/i/6Qmx-UlTzEVNmw" target="_blank">
+                                            Сертификат
+                                    </a> 
+                                </p>
+                                <p class="lh-lg">
+                                    2025 - Stepik: "SQL базовый курс." 
+                                        <a href="https://stepik.org/cert/2715790" target="_blank"><br>
+                                            Сертификат
+                                        </a>
+                                </p>
+                                <p class="lh-lg">
+                                    2025 - Stepik: "Python: базовый курс" 
+                                    <a href="https://stepik.org/cert/2885269" target="_blank"><br>
+                                        Сертификат
+                                    </a>
+                                </p>
+                                <p class="lh-lg">
+                                    2026 - Stepik: "Вёрстка и веб разработка сайтов" 
+                                    <a href="https://stepik.org/cert/3322179" target="_blank"><br>
+                                        Сертификат
+                                    </a>
+                                </p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <!-- right row -->
+                <div class="col-9 p-3">
+                <!-- блок "Обо мне" -->
+                    <div class="card card-right p-2" >
+                        <div class="card-header bg-dark-subtle">
+                            <h2 class="card-title">Инженер тестировщик QA</h2>
                         </div>
-                        <ul>
-                            <li >
-                                <div class="text-indicator">
-                                    Декомпозиция
-                                    <div class="comp__indicator min-indicator">
-                                        <div class="comp__decor min-decor">
-                                        </div>
+                            <p class="card-text ">
+                                 Мой путь в IT начался с самостоятельного изучения BASIC и разработки простых игр — это научило продумывать сценарии и проверять гипотезы. Опыт работы электромехаником закрепил навык системного поиска и описания неисправностей: диагностика, анализ документации, проверка гипотез — всё это близко к методологии тестирования.
+                            </p>
+                            <p class="card-text">
+                                На курсе «Инженер‑тестировщик» в Яндекс Практикуме научился формализовать требования, проектировать тест‑кейсы и чек‑листы, применять техники тест‑дизайна для эффективного покрытия сценариев. Участвовал в 10 учебных и 1 реальном проекте — это помогло понять, как задачи выглядят в рабочем контексте.
+                            </p>
+                            <p class="card-text">
+                                 Работаю с Postman, DevTools, Android Studio, PyCharm, VS Code, SQL. Хочу развиваться в QA на позиции junior‑тестировщика: готов к регрессионным проверкам, оформлению баг‑репортов и адаптации под процессы команды.
+                            </p>
+                    </div>
+                    <!-- Блок "Навыки" -->
+                        <div class="card card-right p-2">
+                            <div class="card-header bg-dark-subtle">
+                                <h2 class="card-title">Навыки</h2>
+                            </div>
+                                    <h5>Анализ требований</h5>
+                                <div class="card-skills d-flex justify-content-between">
+                                    <p>Декомпозиция</p>
+                                <!-- Прогрессбар -->
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                        <div class="progress-bar" style="width: 90%"></div>
                                     </div>
                                 </div>
-                            </li>
-                            <li >
-                                <div class="text-indicator">
-                                    Визуализация
-                                    <div class="vizual__indicator min-indicator">
-                                        <div class="vizual__decor min-decor">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="main-section__right_skills-link"> 
-                         <div class="text-indicator">
-                            Тестдизайн
-                            <div class="test-dizine indicator">
-                                <div class="test-dizine__decor decor">
-                                    
+                            <div class="card-skills d-flex justify-content-between">
+                                <p>Визуализация</p>
+                            <!-- Прогрессбар -->
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <div class="progress-bar" style="width: 95%"></div>
                                 </div>
                             </div>
-                        </div>
-                        <ul>
-                            <li >
-                                <div class="text-indicator">
+                                <p class="card-title">
+                                    <h5>Тест дизайн</h5>
+                                </p>
+                                <div class="card-skills d-flex justify-content-between">
                                     Классы эквивалентов
-                                    <div class="ce__indicator min-indicator">
-                                        <div class="ce__decor min-decor">
-                                        </div>
-                                    </div>
+                                <!-- Прогрессбар -->
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                    </div>   
                                 </div>
-                            </li>
-                            <li >
-                                <div class="text-indicator">
+                                <div class="card-skills d-flex justify-content-between">
                                     Граничные значения
-                                    <div class="gz__indicator min-indicator">
-                                        <div class="gz__decor min-decor">
-                                        </div>
-                                    </div>
+                                <!-- Прогрессбар -->
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                    </div>   
                                 </div>
-                            </li>
-                            <li >
-                                <div class="text-indicator">
-                                    Таблица принятия решений
-                                    <div class="tpr__indicator min-indicator">
-                                        <div class="tpr__decor min-decor">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li >
-                                <div class="text-indicator">
+                                <div class="card-skills d-flex justify-content-between">
                                     Попарное тестирование
-                                    <div class="ppt__indicator min-indicator">
-                                        <div class="ppt__decor min-decor">
-                                        </div>
-                                    </div>
+                                <!-- Прогрессбар -->
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                    </div>   
                                 </div>
+                                <div class="card-skills d-flex justify-content-between">
+                                    Таблицы принятия решений
+                                <!-- Прогрессбар -->
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <div class="progress-bar" style="width: 95%"></div>
+                                    </div>   
+                                </div>
+                                <div class="card-skills d-flex justify-content-between">
+                                    <h5>Тестирование веб-приложений</h5>
+                                <!-- Прогрессбар -->
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <div class="progress-bar" style="width: 95%"></div>
+                                    </div>   
+                                </div>
+                                <div class="card-skills d-flex justify-content-between">
+                                    <h5>Тестирование<br> мобильных приложений</h5>
+                                <!-- Прогрессбар -->
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                    </div>   
+                                </div>
+                                <div class="card-skills d-flex justify-content-between">
+                                    <h5>Тестирование API</h5>
+                                <!-- Прогрессбар -->
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                    </div>   
+                                </div>
+                                <div class="card-skills d-flex justify-content-between">
+                                    <h5>Тестирование Баз данных</h5>
+                                <!-- Прогрессбар -->
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                    </div>   
+                                </div>
+                        </div>
+                    <!-- card 3 -->
+                        <div class="card card-right p-2">
+                            <div class="card-header bg-dark-subtle">
+                                <h2 class="card-title">Инструменты</h2>
+                            </div>
+                             <div class="row g-2 text-center">
+                                <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">Draw.io</div>
+                                </div>
+                                <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">DevTools</div>
+                                </div>
+                                <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">Swagger</div>
+                                </div>
+                                <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">Postman</div>
+                                </div>
+                                <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">Charlies</div>
+                                </div>
+                                <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">Figma</div>
+                                </div>
+                                <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">PyCharm</div>
+                                </div>
+                                <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">VSCode</div>
+                                </div>
+                                <div class="col-3 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">Android Studio</div>
+                                </div>
+                                <div class="col-3 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">Яндекс Трекер</div>
+                                </div>
+                                <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">Test IT</div>
+                                </div>
+                                <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">YouTrack</div>
+                                </div>
+                            <!-- </div> -->
+                            <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">Qase</div>
+                            </div>
+                            <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">HTML</div>
+                            </div>
+                            <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">CSS</div>
+                            </div>
+                            <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">SASS</div>
+                            </div>
+                            <div class="col-2 p-2" >
+                                <div class="p-3" style="border: 2px solid #929090; border-radius: 0.5em;">Python</div>
+                            </div>
+                        </div>
+                        </div>
+                    <!-- card 4 -->
+                        <div class="card card-portfolio p-2">
+                            <div class="card-header bg-dark-subtle">
+                                <h2 class="card-title">Портфолио</h2>
+                            </div>
+                            <p class="card-title">
+                                <h5>
+                                    Веб-приложение "Яндекс маршруты"
+                                </h5>
+                            </p>
+                                <ul>
+                                    <li>
+                                        
+                                        Проведён анализ требований веб-приложения «Яндекс маршруты». По результатам анализа создан maindmap.
+                                        
+                                        <a href="https://drive.google.com/file/d/1ytnx7KzObxEJd6FqFXtt6yvODpeDUaFV/view?usp=drive_link">maindmap-1</a>
+                                    </li>
+                                    <li>
+                                        
+                                         Проведён анализ требований к новой фиче веб-приложения «Яндекс маршруты». По результатам анализа создан maindmap.
+                                         
+                                         <a href="https://drive.google.com/file/d/1i6XjNNpxrqNOgwHuxw661-n80kfKQ8Lj/view?usp=drive_link">maindmap-2</a>
+                                    </li>
+                                    <li>
+                                    
+                                        Проведена проверка  корректности валидации данных в форме добавления прав.
+                                        
+                                        <a href="https://docs.google.com/spreadsheets/d/1jHws7MqNeYYhqgjJ3sOdWV3wH3UI5iEg/edit?usp=sharing&ouid=107229785554849312035&rtpof=true&sd=true">
+                                            Таблица КЭГЗ/Таблица принятия решений
+                                        </a>
+                                    </li>
+                                    <li>
+                                        
+                                        Составлена диаграмму состояний и переходов.
+                                        
+                                        <a href="https://drive.google.com/file/d/1IHFdzUTl0_ojvBRortzfby02oqgkwn-G/view?usp=drive_link">block-diagram</a>
+                                    </li>
+                                    <li>
+                                        Протестирована логика переходов. между экранами и всплывающими окнами.
+                                        
+                                        <a href="https://drive.google.com/file/d/1y35AmqXy3AcUxwfKXOxOE2tm74jJrL5a/view?usp=drive_link">Чек‑лист</a>
+                                    </li>
+                                    <li>
+                                        Протестирована функциональность кнопки "Забронировать"
+                                        
+                                        <a href="https://drive.google.com/file/d/1CjZSsBWTEmy6TskQ9n1kOMOYyKwxnVjz/view?usp=drive_link">Тест-кесы</a>
+                                    </li>
+                                </ul>
+                                <h5>
+                                    Тестирование_веб-приложения_Продуктовый_помошник
+                                </h5>
+                            
+                                <ul>
+                                    <li>
+                                        Проведено функциональное тестирование веб-приложения «Продуктовый помошник».
+                                        <a href="https://docs.google.com/spreadsheets/d/1iFzv4-mo30c_zo6tlS6k_7GH3unEAGOd/edit?usp=drive_link&ouid=107229785554849312035&rtpof=true&sd=true">
+                                        Таблицы принятия решений
+                                        </a>
+                                    </li>
+                                    <li>
+                                    
+                                        Проведено регрессионное тестирование веб-приложения «Продуктовый помошник».
+                                    
+                                        <a href="https://docs.google.com/spreadsheets/d/1EHqsoTr-yMFiwYfzZyjZMYd7CcQrMAs8/edit?usp=drive_link&ouid=107229785554849312035&rtpof=true&sd=true">
+                                        Чек‑листы
+                                        </a>
+                                        <a href="https://docs.google.com/document/d/1AMS8X6m-00ZFHALWkL4eISaoOiHgutJH/edit?usp=drive_link&ouid=107229785554849312035&rtpof=true&sd=true">
+                                        Отчёт о результатах тестирования
+                                        </a>
+                                </li>
+                            </ul>
+                            <h5>
+                            Проект для реального заказчика. 
+                            Тестирование сервиса "Intelinvest" 
+                        </h5>
+                        <ul>
+                            <li>
+                                Изучить документацию по проекту и ранее проведенному тестированию 
+
+                            </li>
+                            <li>
+                                Написать тест-кейсы для проверки расчета формул. Тестирование расчетов проводить только для десктопной версии в Chrome. 
+                                <a href="https://docs.google.com/spreadsheets/d/1MIwT2PbrOw_lWPe4RCgK6bAkKSpXFHXa/edit?usp=drive_link&ouid=107229785554849312035&rtpof=true&sd=true">
+                                    Тест-кейсы
+                                </a>
+                            </li>
+                            <li>
+                                Провести регрессионное тестирование по написанным чек-листам
+                                <a href="https://docs.google.com/spreadsheets/d/1IEglrVRKaeqnJqbvkL7FUyFyxAmkrhKv/edit?usp=drive_link&ouid=107229785554849312035&rtpof=true&sd=true">
+                                    Баг-репорты
+                                </a>
+                                <a href="https://drive.google.com/file/d/1vyoShFS1rS33phI2iyw0zTOEDk-P_i7j/view?usp=drive_link">
+                                    Отчет360 Игорь Матвеев
+                                </a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="main-section__right_skills-link">
-                        
-                        <div class="text-indicator">
-                            Тестирование веб-приложений
-                            <div class="web__indicator indicator">
-                                <div class="web__decor decor">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="main-section__right_skills-link">
-                         <div class="text-indicator">
-                            Тестирование мобильных приложений
-                            <div class="mobil__indicator indicator">
-                                <div class="mobil__decor decor">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="main-section__right_skills-link">
-                         <div class="text-indicator">
-                            Тестирование API
-                            <div class="test-api__indicator indicator">
-                                <div class="test-api__decor decor">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="main-section__right_skills-link">
-                        <div class="text-indicator">
-                            Базы данных
-                            <div class="b-data__indicator indicator">
-                                <div class="b-data__decor decor">
-
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-           </div>
-           <div class="main-section__right_instr">
-                <h2 class="title">Инструменты</h2>
-                <div class="cards-box">
-                    <span class="cards-container">swagger</span>
-                    <span class="cards-container">devtools</span>
-                    <span class="cards-container">vs code</span>
-                    <span class="cards-container">test it</span>
-                    <span class="cards-container">youtrack</span>
-                    <span class="cards-container">github</span>
-                    <span class="cards-container">android studio</span>
-                    <span class="cards-container">charles</span>
-                    <span class="cards-container">postman</span>
-                    <span class="cards-container">figma</span>
-                    <span class="cards-container">html</span>
-                    <span class="cards-container">css</span>
-                    <span class="cards-container">sass</span>
-                    <span class="cards-container">pycharm</span>
-                    <span class="cards-container">mysql</span>
-                    <span class="cards-container">quase</span>
+                        </div>    
                 </div>
-           </div>
-           <div class="main-section__right__portfolio">
-                <h2 class="text">Портфолио</h2>
-                <div class="main-section__right__portfolio_content">
-                    <p>Визуализация 
-                        <span>
-                            <a href="https://drive.google.com/file/d/151cW95IhcJiRBRZTN4Dvd4RHscPACC1W/view?usp=drive_link">
-                            Ссылка на диаграмму состояний и переходов
-                            </a>
-                        </span>
-                    </p>
-                    <p>Классы эквивалентов и граничные значения 
-                        <span>
-                            <a href="https://docs.google.com/spreadsheets/d/1jHws7MqNeYYhqgjJ3sOdWV3wH3UI5iEg/edit?usp=drive_link&ouid=107229785554849312035&rtpof=true&sd=true">
-                            Ссылка на таблицу КЭГЗ
-                            </a>
-                        </span>
-                    </p>
-                    <p>Таблица принятия решений 
-                        <span>
-                            <a href="https://docs.google.com/spreadsheets/d/1y8B3vRy1bjx1v9BHuTR2LnJ_ecbcZVun/edit?usp=drive_link&ouid=107229785554849312035&rtpof=true&sd=true">
-                            Ссылка на ТПР
-                            </a>
-                        </span>
-                    </p>
-                    <p>Чек-листы 
-                        <span>
-                           <a href="https://docs.google.com/spreadsheets/d/1rxxDXkOXKUHwzj0YNJtO1XKEWzn582ZX/edit?usp=drive_link&ouid=107229785554849312035&rtpof=true&sd=true">
-                            Ссылка на чек-лист
-                           </a> 
-                        </span>
-                    </p>
-                    <p>Тест-кейсы 
-                        <span>
-                            <a href="https://docs.google.com/spreadsheets/d/1bDNhUHJ0skNl-wEO8-oM6We2Z2_BpGCS/edit?usp=drive_link&ouid=107229785554849312035&rtpof=true&sd=true">
-                            Ссылка на тест-кейсы
-                            </a>
-                        </span>
-                    </p>
-                    <p>Баг-репорты 
-                        <span>
-                            <a href="https://docs.google.com/spreadsheets/d/1IEglrVRKaeqnJqbvkL7FUyFyxAmkrhKv/edit?usp=drive_link&ouid=107229785554849312035&rtpof=true&sd=true">
-                            Ссылка на баг-репорт
-                            </a>
-                        </span>
-                    </p>
-                    <p>Презентация проекта
-                        <span>
-                            <a href="https://docs.google.com/presentation/d/1O5S26UhIA6cB2KMaKRfPSwTT0v8Vg4n9/edit?usp=drive_link&ouid=107229785554849312035&rtpof=true&sd=true">
-                            Ссылка на презентацию
-                            </a>
-                        </span>
-                    </p>
-                </div>
-           </div>
-       </div> 
-    </div>
-</body>
+            </div>
+        </div>
+    </body> 
 </html>
